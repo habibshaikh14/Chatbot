@@ -1,0 +1,18 @@
+Project title: Virtual assistant for a VR app.
+Project Overview: The virtual assistant responds to the voice commands given by the user to go to various waypoints mentioned within the app.
+Project Description:
+1.	Services used: IBM Watson conversation services, IBM Watson speech to text services, IBM Watson text to speech services.
+2.	Platform used: Unity (version: 2017.3.1f1)
+3.	Assets Used: Watson SDK for unity.
+4.	Programming Language used: C#.
+The VR app for which the assistant is made, is an app that lets user experience virtual environment of an apartment in which the user can roam all around the apartment using a remote control.
+The virtual assistant is used to guide the user who is unable to use the remote or if the user wants to use voice commands to move around the apartment.
+Project Details:
+Steps:
+1.	When the user starts the VR app the services are initialized and a “Hello” message is sent to IBM cloud’s conversation services and the user is greeted with an introductory response.
+2.	To give commands to the chatbot, the user clicks on the record button, after pressing the button the Speech to text service is turned on and the server starts listening to your voice and displays the output on the screen of the things you have spoken.
+3.	The server keeps listening until the send button is clicked. Once the send button is clicked whatever text written on the screen is send to the conversation assistant in the IBM cloud, the assistant replies with a suitable reply depending on the definitions mentioned in the database.
+The Type of replies the assistant gives:
+a.	If the user has requested to move somewhere then the position of the user is changed to the requested location.
+b.	If the user is trying to get some information about the assistant and the project all about then they are given a reply that describes the assistant.
+c.	If the user has spoken something gibberish or something that is out of context for the assistant, then the user is given a predefined reply asking to rephrase. 
